@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'DiscordBot'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral();
+    jcenter()
+    
+}
+
+dependencies {
+  
+    dependencies {
+        implementation("net.dv8tion:JDA:3.8.3_460")
+    }
+    
+    // for tests only
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
